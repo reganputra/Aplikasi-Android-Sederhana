@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">HsrCharProfile</string>
+
+    <string name="char_name">Name</string>
+    <string name="description">Description"</string>
+    <string name="char_rarity">Rarity"</string>
+    <string name="char_path">Path</string>
+    <string name="char_faction">Faction</string>
+    <string name="detai_char">Detail Character</string>
+
+    <string name="about">About Me</string>
+    <string name="my_name">Regan Putra Ramadhan</string>
+    <string name="my_email">lotbrok1982@gmail.com</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+
+    <string-array name="data_char">
+        <item>Acheron</item>
+        <item>Dan Heng Imbibitor Lunae</item>
+        <item>Feixiao</item>
+        <item>Firefly</item>
+        <item>Huohuo</item>
+        <item>Jingliu</item>
+        <item>Robin</item>
+        <item>Ruan Mei</item>
+        <item>Sparkle</item>
+        <item>Yunli</item>
+    </string-array>
+
+    <string-array name="data_path">
+        <item>Nihility</item>
+        <item>Destruction</item>
+        <item>Hunt</item>
+        <item>Destruction</item>
+        <item>Abundance</item>
+        <item>Destruction</item>
+        <item>Harmony</item>
+        <item>Harmony</item>
+        <item>Harmony</item>
+        <item>Destruction</item>
+    </string-array>
+
+    <string-array name="data_rarity">
+        <item>5 Star</item>
+        <item>5 Star</item>
+        <item>5 Star</item>
+        <item>5 Star</item>
+        <item>5 Star</item>
+        <item>5 Star</item>
+        <item>5 Star</item>
+        <item>5 Star</item>
+        <item>5 Star</item>
+        <item>5 Star</item>
+    </string-array>
+
+    <string-array name="data_faction">
+        <item>Galaxy Ranger</item>
+        <item>Xianzhou Alliance</item>
+        <item>Xianzhou Yaoqing</item>
+        <item>Stellaron Hunters</item>
+        <item>The Xianzhou Luofu</item>
+        <item>The Xianzhou Luofu</item>
+        <item>Penacony</item>
+        <item>Genius Society</item>
+        <item>Penacony</item>
+        <item>The Xianzhou Zhuming</item>
+    </string-array>
+
+    <string-array name="data_char_description">
+        <item>Lone voyagers in the cosmos are driven by two desires — to tread in the trails of the past and to forge their own way. But under THEIR scrutiny… most end up adhering to the former.</item>
+        <item>I am nobody\'s shadow.</item>
+        <item>The Merlin\'s Claw is what\'s written in the books, and The Great General is what people call me. The former sounds too formal, the latter too exaggerated. Neither suits me. I prefer my own title, the Lacking General — lacking in worries, regrets, and rivals.</item>
+        <item>Fyreflies are such magical creatures, aren\'t they? They may throw themselves at a flame or suddenly grow old, but every night before that, they will shine brighter than the stars.</item>
+        <item>I can use this banner to dispel demons… but it also comes in handy when signaling my surrender…</item>
+        <item>Whoever wishes to learn my swordplay, I will teach them.</item>
+        <item>There\'s a saying — the more demanding the diner, the stronger the skills of the chef… but no matter what others say, I\'ll always be demanding more from myself</item>
+        <item>Without accelerating or postponing the arrival of death, life will always wither."</item>
+        <item>I\'m not exactly a person loaded with cool skills, and dreaming big isn\'t really my thing. But, ya know, my latest thing is… getting myself into the Genius Society! Ha, I'm so ready to give it a go. Reckon anyone will buy it?</item>
+        <item>Swords have a temper. Sometimes, you have to touch them to calm them down — put the hilt of the sword in your hand, and it\'ll tell you what's wrong!</item>
+    </string-array>
+
+    <string-array name="data_detail_char">
+        <item>Acheron, real name Raiden Bosenmori Mei.\n
+            A drifter claiming to be a Galaxy Ranger, though she is later revealed to be a Self-Annihilator. She walks the cosmos alone, carrying with her a long sword.\n
+            Though aloof and taciturn, her blade flicks out like lashing lightning. And yet, she always strikes with her scabbard, never drawing the sword free.
+        </item>
+
+        <item>
+        Dan Heng\'s true Vidyadhara form, revealed after accepting the residual powers from the previous reincarnation of Imbibitor Lunae.\n
+            Upon accepting the majestic horns atop his crown, he must accept all the merits and faults attributed to that person.
+        </item>
+
+        <item>A former war slave of the borisin, Feixiao is now the Merlin\'s Claw of the Xianzhou Yaoqing and one of the Seven Arbiter-Generals.\n
+            Her personality is unrestrained and frank, dashing and straightforward. \n
+            She is skilled in all forms of martial arts and has honed herself into a supreme weapon. She is widely adored by Xianzhou soldiers and civilians alike as The Great General.
+        </item>
+
+        <item>A member of the Stellaron Hunters and a young girl clad in a mechanical armor SAM.\n
+        Born as a weapon, she\'s afflicted with the agony of Entropy Loss Syndrome due to genetic modification. She joined the Stellaron Hunters in search of the meaning of life, relentlessly pursuing ways to defy fate.
+        </item>
+
+        <item>A pitiable and helpless Foxian girl who is also a Ten-Lords Commission Judge-in-training, who fears ghosts but must catch them.\n
+            Due to having a heliobus named Tail sealed in her tail by the judges of the Ten-Lords Commission, she became a "cursed one" who attracts inhuman beings.
+        </item>
+
+        <item>Once the sword master of the Xianzhou Luofu, as well as Jing Yuan\'s mentor. After succumbing to mara and going insane, she managed to escape Starskiff Haven in the Year 7380 of the Star Calendar, and easily froze all the Cloud Knights sent after her before Jing Yuan finally confronted and defeated her in battle.\n
+        However, she managed to survive the encounter and traveled the galaxies outside the Luofu for centuries. At some unknown point, Jingliu "made a deal" to regain her sanity, which Luocha has proposed to be the solution to mara.
+        </item>
+
+        <item>A Halovian singer born in Penacony and rose to cosmic fame. An elegant and demure young lady.\n
+        This time, she has been invited home by The Family to grace everyone with a song at the Charmony Festival. She can use the power of Harmony to broadcast her music, manifesting "resonance" among not only her fans but all manner of lifeforms.</item>
+        <item>A sweet-tempered and elegant scholar, and Member #81 of the Genius Society.\n
+        An expert in the biological sciences. She earned Nous\' attention with her talent and terrifying perseverance, and began her research on the origin of life in a secret corner of the universe. Because of that, she was invited by Herta to collaborate with Screwllum and Stephen to develop the Simulated Universe.
+        </item>
+
+        <item>A member of the Masked Fools.\n Inscrutable and unscrupulous. A dangerous master of theatrics engrossed in playing roles. A woman of countless masks and many faces. Wealth, status, power... None of this matters to Sparkle. The only thing that can lure her interest is "amusement.
+        </item>
+
+        <item>A sword hunter from the Xianzhou Zhuming and "the Flaming Heart" General Huaiyan\'s darling granddaughter.\n
+        Frank and straightforward. She practiced swordsmanship and forging from Huaiyan since young, and thus is the second-youngest prodigy swordmaster of the Flamewheel Octet.\n
+        Fueled by an intense loathing for the cursed swords that emerged from the Zhuming, she vowed to "hunt down and wipe out all cursed swords."
+        </item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/Acheron_Icon</item>
+        <item>@drawable/Dan_Heng_Imbibitor_Lunae_Icon</item>
+        <item>@drawable/Feixiao_Icon</item>
+        <item>@drawable/Firefly_Icon</item>
+        <item>@drawable/Huohuo_Icon</item>
+        <item>@drawable/Jingliu_Icon</item>
+        <item>@drawable/Robin_Icon</item>
+        <item>@drawable/Ruan_Mei_Icon</item>
+        <item>@drawable/Sparkle_Icon</item>
+        <item>@drawable/Yunli_Icon</item>
+    </integer-array>
+
+
+</resources>
