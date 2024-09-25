@@ -9,6 +9,17 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ListCharAdapter(private val listChar: ArrayList<Character>): RecyclerView.Adapter<ListCharAdapter.ListViewHolder>() {
 
+    // Membuat onClick
+    interface OnItemClickCallback{
+        fun onItemClicked(data: Character)
+    }
+
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
         val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
@@ -29,6 +40,7 @@ class ListCharAdapter(private val listChar: ArrayList<Character>): RecyclerView.
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
         holder.tvDescription.text = description
+        holder.itemView.setOnClickListener{onItemClickCallback.onItemClicked(listChar[holder.adapterPosition])}
     }
 
 

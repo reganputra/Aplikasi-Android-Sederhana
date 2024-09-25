@@ -6,7 +6,7 @@
     <string name="char_rarity">Rarity</string> <!-- Fixed -->
     <string name="char_path">Path</string>
     <string name="char_faction">Faction</string>
-    <string name="detai_char">Detail Character</string>
+    <string name="detail_char">Detail Character</string>
 
     <string name="about">About Me</string>
     <string name="my_name">Regan Putra Ramadhan</string>
