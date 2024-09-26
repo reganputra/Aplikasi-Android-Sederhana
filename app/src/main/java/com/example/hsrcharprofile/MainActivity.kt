@@ -73,6 +73,8 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.about_page -> {
+                val intoDetail = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(intoDetail)
             }
         }
         return super.onOptionsItemSelected(item)
