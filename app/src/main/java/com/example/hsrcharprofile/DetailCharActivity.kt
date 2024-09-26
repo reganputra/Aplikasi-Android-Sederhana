@@ -3,6 +3,7 @@ package com.example.hsrcharprofile
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -18,19 +19,19 @@ class DetailCharActivity: AppCompatActivity() {
 
         val detailChar = intent.getParcelableExtra<Character>(MainActivity.INTENT_SEND)
 
-        val photo = findViewById<ImageView>(R.id.photo_img)
-        val name = findViewById<TextView>(R.id.char_name)
-        val charRarity = findViewById<TextView>(R.id.rarity_char)
-        val charPath = findViewById<TextView>(R.id.path_char)
-        val faction = findViewById<TextView>(R.id.faction_char)
-        val detail = findViewById<TextView>(R.id.description)
+        if (detailChar == null) {
+            Toast.makeText(this, "Character data is unavailable", Toast.LENGTH_SHORT).show()
+            return
+        }
 
-        photo.setImageResource(detailChar?.photo!!)
-        name.text = detailChar.name
-        charRarity.text = detailChar.rarity
-        charPath.text = detailChar.path
-        faction.text = detailChar.faction
-        detail.text = detailChar.detail
+        with(detailChar) {
+            findViewById<ImageView>(R.id.photo_img).setImageResource(photo)
+            findViewById<TextView>(R.id.char_name).text = name
+            findViewById<TextView>(R.id.rarity_char).text = rarity
+            findViewById<TextView>(R.id.path_char).text = path
+            findViewById<TextView>(R.id.faction_char).text = faction
+            findViewById<TextView>(R.id.description).text = detail
+        }
 
     }
 }

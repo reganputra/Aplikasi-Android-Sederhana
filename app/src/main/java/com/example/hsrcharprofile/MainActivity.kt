@@ -14,18 +14,16 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var rvChar: RecyclerView
-    private val list = ArrayList<Character>()
+    private val rvChar: RecyclerView by lazy { findViewById(R.id.rv_char) }
+    private val list: ArrayList<Character> by lazy { getListChar() }
 
     companion object {
-        val INTENT_SEND = "OBJECT_SENT"
+        const val INTENT_SEND = "OBJECT_SENT"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        rvChar = findViewById(R.id.rv_char)
         rvChar.setHasFixedSize(true)
 
 
@@ -37,16 +35,17 @@ class MainActivity : AppCompatActivity() {
         val dataName = resources.getStringArray(R.array.data_char)
         val dataDescription = resources.getStringArray(R.array.data_char_description)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
-        val datararity = resources.getStringArray(R.array.data_rarity)
+        val dataRarity = resources.getStringArray(R.array.data_rarity)
         val dataPathChar = resources.getStringArray(R.array.data_path)
         val dataFaction = resources.getStringArray(R.array.data_faction)
         val dataDetail = resources.getStringArray(R.array.data_detail_char)
         val listChar = ArrayList<Character>()
 
         for (i in dataName.indices){
-            val char = Character(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), datararity[i],dataPathChar[i], dataFaction[i], dataDetail[i])
+            val char = Character(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), dataRarity[i],dataPathChar[i], dataFaction[i], dataDetail[i])
             listChar.add(char)
         }
+        dataPhoto.recycle()
         return listChar
     }
 

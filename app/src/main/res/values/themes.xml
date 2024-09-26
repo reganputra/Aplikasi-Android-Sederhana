@@ -5,5 +5,6 @@
         <item name="colorOnPrimary">@color/white</item>
     </style>
 
+    
     <style name="Theme.HsrCharProfile" parent="Base.Theme.HsrCharProfile" />
 </resources>
