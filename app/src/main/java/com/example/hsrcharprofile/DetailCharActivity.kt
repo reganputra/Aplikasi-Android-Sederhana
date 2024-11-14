@@ -5,13 +5,17 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.hsrcharprofile.databinding.DetailLayoutBinding
 
 
 class DetailCharActivity: AppCompatActivity() {
 
+    private lateinit var binding: DetailLayoutBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.detail_layout)
+       binding = DetailLayoutBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         supportActionBar?.apply {
             title = getString(R.string.detail_char)
@@ -25,12 +29,14 @@ class DetailCharActivity: AppCompatActivity() {
         }
 
         with(detailChar) {
-            findViewById<ImageView>(R.id.photo_img).setImageResource(photo)
-            findViewById<TextView>(R.id.char_name).text = name
-            findViewById<TextView>(R.id.rarity_char).text = rarity
-            findViewById<TextView>(R.id.path_char).text = path
-            findViewById<TextView>(R.id.faction_char).text = faction
-            findViewById<TextView>(R.id.description).text = detail
+            binding.photoImg.setImageResource(photo)
+            binding.charName.text = name
+            findViewById<TextView>(R.id.description_char).text = detail
+            binding.rarityChar.text = rarity
+            binding.pathChar.text = path
+            binding.factionChar.text = faction
+
+
         }
 
     }
